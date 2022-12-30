@@ -383,13 +383,14 @@ i {
     font-weight: 600;
 }
 
-/* USER */
-.user-profile {
+/* USER / ORGANISATION Profile 
+*/
+.profile {
     position: relative;
     display: flex;
 }
 
-.user-profile--edit {
+.profile--edit {
     color: white;
     position: absolute;
     right: 0px;
@@ -399,15 +400,15 @@ i {
     cursor: pointer;
 }
 
-.user-profile--edit:hover {
+.profile--edit:hover {
     color: var(--color-accent);
 }
 
-.user-profile--edit i {
+.profile--edit i {
   pointer-events: none;
 }
 
-.user-avatar {
+.avatar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -425,50 +426,45 @@ i {
     box-sizing: border-box;
 }
 
-.user-avatar img {
+.avatar img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.user-details {
+.profile-details {
     width: calc(100% - 250px);
 }
 
-.user-details .details-primary {
+.profile-details .details-primary {
     padding-bottom: 20px;
     margin-bottom: 10px;
 
     border-bottom: 2px solid var(--color-primary);
 }
 
-.user-details .details-primary .user-name {
+.profile-details .details-primary .profile-name {
     display: block;
 
     font-size: 28px;
     font-weight: 600;
 }
 
-.user-details .details-primary .user-role {
+.profile-details .details-primary .profile-name--secondary {
     color: var(--color-accent);
 
     font-size: 22px;
     font-weight: 600;
 }
 
-.user-details .details-secondary p {
+.profile-details .details-secondary p {
     margin: 10px 0;
     width: 50%;
     float: left;
 }
 
-.user-details .details-secondary p strong {
+.profile-details .details-secondary p strong {
     display: block;
-}
-
-.user-details .details-secondary .form-section--title {
-    color: var(--color-accent);
-    border-color: var(--color-secondary);
 }
 
 .avatar-presets {
@@ -506,6 +502,7 @@ i {
 .avatar-preset:hover .avatar-btn {
     color: var(--color-accent);
 }
+
 
 /* TABLES */
 .table-actions {
