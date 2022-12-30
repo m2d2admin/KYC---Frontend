@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+<div class="sidebar">
+    <a id="sidebarBtn" class="btn-collapse"><i class="fa fa-caret-right"></i></a>
+
+    <div class="logo">
+        <img src="img/logo-placeholder.png"/>
+    </div>
+
+    <div class="menu-area">
+        <ul class="menu main-menu">
+            <li class="menu-item">
+                <a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a>
+            </li>
+            <li class="menu-item">
+                <a href="klanten.html"><i class="fa fa-user-tie"></i>Klanten</a>
+            </li>
+            <li class="menu-item">
+                <a href="leveranciers.html"><i class="fa-solid fa-truck"></i>Leveranciers</a>
+            </li>
+            <li class="menu-item">
+                <a href="userprofile.html" class="active"><i class="fa fa-address-card"></i>Profiel</a>
+            </li>
+        </ul>
+        <div class="menu-divider"></div>
+        <ul class="menu admin-menu">
+            <li class="menu-item">
+                <a href="gebruikers.html"><i class="fa fa-users"></i>Gebruikers</a>
+            </li>
+            <li class="menu-item">
+                <a href="rollen.html"><i class="fa fa-suitcase"></i>Rollen</a>
+            </li>
+            <li class="menu-item">
+                <a href="organisatie.html"><i class="fa fa-building"></i>Organisatie</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sponsor">
+        <span> Sponsored by:</span>
+        <img src="img/logo-white.png"/>
+    </div>
+</div>
+<div class="page-content">
+    <div class="widget-row">
+        <div class="page-intro">
+            <span class="page-title">Profiel</span>
+            <span class="page-desc">Hier kan je je persoonlijk profiel inzien</span>
+        </div>
+    </div>        
+
+    <div class="widget-row">
+        <div class="widget-area">
+            <div class="user-profile">
+
+                <a class="user-profile--edit modal-button" href="#modalProfileEdit"><i class="fa fa-edit"></i></a>
+
+                <div class="user-avatar">
+                    <div class="avatar-wrapper">
+                        <img src="img/placeholder.png">
+                    </div>
+                    <a class="link-primary modal-button" href="#modalAvatarEdit">Bewerken</a>
+                </div>
+
+                <div class="user-details">
+                    <div class="details-primary">
+                        <span class="user-name">Navarone de Graaf</span>
+                        <span class="user-role">Administrator</span>
+                    </div>
+
+                    <div class="details-secondary">
+                        <form>        
+                            <div class="form-field">
+                                <label>Bedrijf</label>
+                                <span>M2-D2</span>
+                            </div>
+                            <div class="form-field">
+                                <label>Adres </label>
+                                <span>Escudostraat 2</span>
+                            </div>
+                            <div class="form-field">
+                                <label>Plaats</label>
+                                <span>Barendrecht</span>
+                            </div>
+                            <div class="form-field">
+                                <label>Land</label>
+                                <span>Nederland</span>
+                            </div>
+
+
+                            <div class="form-field">
+                                <label>Email</label>
+                                <span>navarone.degraaf@m2-d2.com</span>
+                            </div>
+                            <div class="form-field">
+                                <label>Telefoonnummer</label>
+                                <span>01012345678</span>
+                            </div>
+                            <div class="form-field">
+                                <label>Mobielnummer</label>
+                                <span>06123456789</span>
+                            </div>
+
+                            <div class="form-field">
+                                <label>Notitie</label>
+                                <span>Indien bladibla dan bladibla</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalProfileEdit" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Profiel bewerken</span>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <span class="form-section--title">Gebruiker</span>
+
+                    <div class="form-field">
+                        <label>Voornaam</label>
+                        <input type="text" placeholder="Navarone"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Achternaam</label>
+                        <input type="text" placeholder="de Graaf"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Bedrijf</label>
+                        <input type="text" placeholder="M2-D2"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Rol</label>
+                        <select>
+                            <option>Management</option>
+                            <option>Sales</option>
+                            <option>Inkoop</option>
+                            <option>Logistiek</option>
+                            <option>Finance</option>
+                            <option>Audit</option>
+                            <option>Administrator</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Huidig wachtwoord</label>
+                        <input type="password"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Nieuw wachtwoord</label>
+                        <input type="password"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Bevstig wachtwoord</label>
+                        <input type="password"/>
+                    </div>
+
+                    <span class="form-section--title">Bedrijfsgegevens</span>
+
+                    <div class="form-field">
+                        <label>Straat</label>
+                        <input type="text" placeholder="Stieltjesstraat"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Huisnummer</label>
+                        <input type="number" placeholder="8"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Toevoeging</label>
+                        <input type="text" placeholder="K"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Postcode</label>
+                        <input type="text"  placeholder="3071 JW"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Plaats</label>
+                        <input type="text" placeholder="Rotterdam"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Land</label>
+                        <input type="text" placeholder="Nederland"/>
+                    </div>
+
+                    <span class="form-section--title">Contactgegevens</span>
+
+                    <div class="form-field">
+                        <label>Email</label>
+                        <input type="email" placeholder="navarone.degraaf@m2-d2.com"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Telefoonnummer</label>
+                        <input type="tel" placeholder="0101234567"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Mobielnummer</label>
+                        <input type="tel" placeholder="0612345678"/>
+                    </div>
+
+                    <span class="form-section--title">Extra</span>
+                    <div class="form-field">
+                        <label>Notitie</label>
+                        <textarea placeholder="Indien bladibla dan bladibla"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-outline btn-close">Annuleren</a>
+                <a class="btn btn-primary">Opslaan</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalAvatarEdit" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Profielfoto aanpassen</span>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="modal-body">
+                <div class="avatar-presets">
+                    <div class="avatar-preset">
+                        <img src="img/avatar/avatar1.png">
+                        <a class="avatar-btn">Kies</a>
+                    </div>
+
+                    <div class="avatar-preset">
+                        <img src="img/avatar/avatar2.png">
+                        <a class="avatar-btn">Kies</a>
+                    </div>
+
+                    <div class="avatar-preset">
+                        <img src="img/avatar/avatar1.png">
+                        <a class="avatar-btn">Kies</a>
+                    </div>
+
+                    <div class="avatar-preset">
+                        <img src="img/avatar/avatar2.png">
+                        <a class="avatar-btn">Kies</a>
+                    </div>
+
+                    <div class="avatar-preset">
+                        <img src="img/avatar/avatar1.png">
+                        <a class="avatar-btn">Kies</a>
+                    </div>
+
+                    <div class="avatar-preset">
+                        <img src="img/avatar/avatar2.png">
+                        <a class="avatar-btn">Kies</a>
+                    </div>
+
+                    <div class="avatar-preset">
+                        <form class="no-grid">
+                            <div class="form-field">
+                                <label for="file-upload" class="custom-avatar-upload">
+                                    <i class="fa fa-cloud-upload"></i> 
+                                </label>
+                                <input type="file" id="file-upload" name="filename">
+                            </div>
+                        </form>
+                        <a class="avatar-btn">Upload je eigen avatar</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-outline btn-close">Annuleren</a>
+                <a class="btn btn-primary">Opslaan</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+

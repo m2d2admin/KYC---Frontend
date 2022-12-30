@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rollen</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+<div class="sidebar">
+    <a id="sidebarBtn" class="btn-collapse"><i class="fa fa-caret-right"></i></a>
+
+    <div class="logo">
+        <img src="img/logo-placeholder.png"/>
+    </div>
+
+    <div class="menu-area">
+        <ul class="menu main-menu">
+            <li class="menu-item">
+                <a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a>
+            </li>
+            <li class="menu-item">
+                <a href="klanten.html" ><i class="fa fa-user-tie"></i>Klanten</a>
+            </li>
+            <li class="menu-item">
+                <a href="leveranciers.html"><i class="fa-solid fa-truck"></i>Leveranciers</a>
+            </li>
+            <li class="menu-item">
+                <a href="userprofile.html"><i class="fa fa-address-card"></i>Profiel</a>
+            </li>
+        </ul>
+        <div class="menu-divider"></div>
+        <ul class="menu admin-menu">
+            <li class="menu-item">
+                <a href="gebruikers.html"><i class="fa fa-users"></i>Gebruikers</a>
+            </li>
+            <li class="menu-item">
+                <a href="rollen.html" class="active"><i class="fa fa-suitcase"></i>Rollen</a>
+            </li>
+            <li class="menu-item">
+                <a href="organisatie.html"><i class="fa fa-building"></i>Organisatie</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sponsor">
+        <span>Sponsored by:</span>
+        <img src="img/logo-white.png"/>
+    </div>
+</div>
+<div class="page-content">
+    <div class="widget-row">
+        <div class="page-intro">
+            <span class="page-title">Rollen</span>
+            <span class="page-desc">Hier zie je een overzicht van alle rollen</span>
+        </div>
+    </div>        
+
+    <div class="widget-row">
+        <div class="widget-area">
+            <div class="table-actions">
+                <div class="table-title">
+                    Rollen overzicht
+                </div>
+        
+            </div>
+        
+            <table class="table table-default">
+                <thead>
+                    <tr>
+                        <th class="th-sort">Rol</th>
+                        <th class="th-sort">Aantal</th>
+                        <th class="th th-center">Gebruikers</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+
+                    <!--  Row with Working Links -->
+                    <tr>
+                        <td class="modal-button" href="#modalRoleView">Administrator</td>
+                        <td>2</td>
+                        <td class="action"><a class="modal-button" href="#modalRoleUsers"><i class="fa fa-user"></i></a></td>
+                    </tr>
+                    <!--  END Row with Working Links -->
+
+                    <tr>
+                        <td class="modal-button" href="#modalRoleView">Audit</td>
+                        <td>2</td>
+                        <td class="action"><a class="modal-button" href="#modalRoleUsers"><i class="fa fa-user"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="modal-button" href="#modalRoleView">Finance</td>
+                        <td>2</td>
+                        <td class="action"><a class="modal-button" href="#modalRoleUsers"><i class="fa fa-user"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="modal-button" href="#modalRoleView">Logistiek</td>
+                        <td>2</td>
+                        <td class="action"><a class="modal-button" href="#modalRoleUsers"><i class="fa fa-user"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="modal-button" href="#modalRoleView">Inkoop</td>
+                        <td>2</td>
+                        <td class="action"><a class="modal-button" href="#modalRoleUsers"><i class="fa fa-user"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="modal-button" href="#modalRoleView">Management</td>
+                        <td>2</td>
+                        <td class="action"><a class="modal-button" href="#modalRoleUsers"><i class="fa fa-user"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="modal-button" href="#modalRoleView">Sales</td>
+                        <td>2</td>
+                        <td class="action"><a class="modal-button" href="#modalRoleUsers"><i class="fa fa-user"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="modalRoleView" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Administrator</span>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="modal-body">
+                <table class="table table-default table-roles">
+                    <thead>
+                        <tr>
+                            <th class="th-sort">Pagina</th>
+                            <th class="th-center">Maken</th>
+                            <th class="th-center">Bewerken</th>
+                            <th class="th-center">Lezen</th>
+                            <th class="th-center">Verwijderen</th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        <tr>
+                            <td>Klanten</td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td> 
+                        </tr>
+                        <tr>
+                            <td>Leveranciers</td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td> 
+                        </tr>
+                        <tr>
+                            <td>Gebruikers</td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td> 
+                        </tr>
+                        <tr>
+                            <td>Logs</td>
+                            <td class="td-center"><i class="fa fa-times"></i></td>
+                            <td class="td-center"><i class="fa fa-times"></i></td>
+                            <td class="td-center"><i class="fa fa-check"></i></td>
+                            <td class="td-center"><i class="fa fa-times"></i></td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-outline btn-close">Terug</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalRoleUsers" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Alle administrators</span>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-outline btn-close">Terug</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

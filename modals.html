@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KYC Modals</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+
+<a id="testBtn">Klik hier om een model te openen</a>
+
+<div id="testModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="modal-title">Modal Titel</span>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+        <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-outline">Annuleren</a>
+            <a class="btn btn-primary">Opslaan</a>
+        </div>
+      </div>
+</div>
+
+</body>
+</html>
+
+<script>
+    // Get the modal
+var modal = document.getElementById("testModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("testBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<style>
+
+body {
+    background: #1C2039;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/* ICONS */
+i {
+    font-size: 20px;
+    font-family: 'FontAwesome', 'sans-serif';
+}
+
+/* MODALS */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #262B49;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 0px 20px 20px 20px;
+  width: 60%; 
+  border-radius: 10px;
+}
+
+/* Modal Header */
+
+.modal-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+.modal-header .modal-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.close {
+    color: white;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+  color: #ababab;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Footer */
+.modal-footer {
+    display: flex;
+    justify-content: end;
+}
+
+.modal-footer .btn {
+    margin-left: 20px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 15px 35px;
+
+    font-size: 18px;
+    font-weight: 400;
+    
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background: #559C8E;
+    border-color: #559C8E;
+}
+
+.btn-primary:hover {
+    background: none;
+}
+
+.btn-outline {
+    border-color: white;
+}
+
+.btn-outline:hover {
+    border-color: #ABABAB;
+    color: #ABABAB;
+}
+</style>

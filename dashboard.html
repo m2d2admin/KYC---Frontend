@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+<div class="sidebar">
+    <a id="sidebarBtn" class="btn-collapse"><i class="fa fa-caret-right"></i></a>
+
+    <div class="logo">
+        <img src="img/logo-placeholder.png"/>
+    </div>
+
+    <div class="menu-area">
+        <ul class="menu main-menu">
+            <li class="menu-item">
+                <a href="dashboard.html" class="active"><i class="fa fa-dashboard"></i>Dashboard</a>
+            </li>
+            <li class="menu-item">
+                <a href="klanten.html"><i class="fa fa-user-tie"></i>Klanten</a>
+            </li>
+            <li class="menu-item">
+                <a href="leveranciers.html"><i class="fa-solid fa-truck"></i>Leveranciers</a>
+            </li>
+            <li class="menu-item">
+                <a href="userprofile.html"><i class="fa fa-address-card"></i>Profiel</a>
+            </li>
+        </ul>
+        <div class="menu-divider"></div>
+        <ul class="menu admin-menu">
+            <li class="menu-item">
+                <a href="gebruikers.html"><i class="fa fa-users"></i>Gebruikers</a>
+            </li>
+            <li class="menu-item">
+                <a href="rollen.html"><i class="fa fa-suitcase"></i>Rollen</a>
+            </li>
+            <li class="menu-item">
+                <a href="organisatie.html"><i class="fa fa-building"></i>Organisatie</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sponsor">
+        <span>Sponsored by:</span>
+        <img src="img/logo-white.png"/>
+    </div>
+</div>
+<div class="page-content">
+    <div class="widget-row">
+        <div class="page-intro">
+            <span class="page-title">Dashboard</span>
+            <span class="page-desc">Hi Admin, dit is jou persoonlijk dashboard</span>
+        </div>
+    </div>        
+
+    <div class="widget-row widget-row-50">
+        <div class="widget-area">
+            <div class="table-actions">
+                <div class="table-title">
+                    Actiepunten Initiële controles
+                </div>
+        
+                <a class="link-primary">Bekijk alle</a>
+            </div>
+        
+            <table class="table table-default">
+                <thead>
+                    <tr>
+                        <th class="th-sort">Klantnaam</th>
+                        <th class="th-sort">Vervaldatum</th>
+                        <th class="th-sort th-center">Status</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        
+            <div class="table-pagination">
+                <div class="pagination-total">
+                    Showing <span>1</span> to <span>5</span> of <span>23</span> entries
+                </div>
+                <ul class="pagination">
+                <li class="pagination-btn">Previous</li> 
+                <li class="pagination-btn active">1</li> 
+                <li class="pagination-btn">2</li> 
+                <li class="pagination-btn">3</li> 
+                <li class="pagination-btn">Next</li> 
+                </ul>
+            </div>
+        </div>
+
+        <div class="widget-area">
+            <div class="table-actions">
+                <div class="table-title">
+                    Actiepunten Doorlopende controles
+                </div>
+        
+                <a class="link-primary">Bekijk alle</a>
+            </div>
+        
+            <table class="table table-default">
+                <thead>
+                    <tr>
+                        <th class="th-sort">Klantnaam</th>
+                        <th class="th-sort">Vervaldatum</th>
+                        <th class="th-sort th-center">Status</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-progress"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-onhold"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-onhold"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        
+            <div class="table-pagination">
+                <div class="pagination-total">
+                    Showing <span>1</span> to <span>5</span> of <span>23</span> entries
+                </div>
+                <ul class="pagination">
+                <li class="pagination-btn">Previous</li> 
+                <li class="pagination-btn active">1</li> 
+                <li class="pagination-btn">2</li> 
+                <li class="pagination-btn">3</li> 
+                <li class="pagination-btn">Next</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="widget-row widget-row-25">
+        <div class="widget-area">
+            <div class="widget-title center">
+                Klanten
+            </div>
+
+            <div class="stats--big">1.349</div>
+
+            <div class="widget-stats">
+                <span class="stat stat--success">1050</span>
+                <span class="stat stat--error">139</span>
+                <span class="stat stat--onhold">160</span>
+            </div>
+        </div>
+        <div class="widget-area">
+            hier komt een chart
+        </div>
+        <div class="widget-area">
+            <div class="widget-title center">
+                Leveranciers
+            </div>
+
+            <div class="stats--big">2.208</div>
+
+            <div class="widget-stats">
+                <span class="stat stat--success">1604</span>
+                <span class="stat stat--error">304</span>
+                <span class="stat stat--onhold">300</span>
+            </div>
+        </div>
+        <div class="widget-area">
+            hier komt een chart
+        </div>
+    </div>
+
+
+    <div class="widget-row widget-row-50">
+        <div class="widget-area">
+            <div class="table-actions">
+                <div class="table-title">
+                    Recente klanten
+                </div>
+        
+                <a href="klanten.html" class="link-primary">Bekijk alle</a>
+            </div>
+        
+            <table class="table table-default">
+                <thead>
+                    <tr>
+                        <th class="th-sort">Bedrijfsnaam</th>
+                        <th class="th-sort">Registratiedatum</th>
+                        <th class="th-sort th-center">Status</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        
+            <div class="table-pagination">
+                <div class="pagination-total">
+                    Showing <span>1</span> to <span>5</span> of <span>23</span> entries
+                </div>
+                <ul class="pagination">
+                <li class="pagination-btn">Previous</li> 
+                <li class="pagination-btn active">1</li> 
+                <li class="pagination-btn">2</li> 
+                <li class="pagination-btn">3</li> 
+                <li class="pagination-btn">Next</li> 
+                </ul>
+            </div>
+        </div>
+
+        <div class="widget-area">
+            <div class="table-actions">
+                <div class="table-title">
+                    Recente leveranciers
+                </div>
+        
+                <a href="leveranciers.html" class="link-primary">Bekijk alle</a>
+            </div>
+        
+            <table class="table table-default">
+                <thead>
+                    <tr>
+                        <th class="th-sort">Bedrijfsnaam</th>
+                        <th class="th-sort">Registratiedatum</th>
+                        <th class="th-sort th-center">Status</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        
+            <div class="table-pagination">
+                <div class="pagination-total">
+                    Showing <span>1</span> to <span>5</span> of <span>23</span> entries
+                </div>
+                <ul class="pagination">
+                <li class="pagination-btn">Previous</li> 
+                <li class="pagination-btn active">1</li> 
+                <li class="pagination-btn">2</li> 
+                <li class="pagination-btn">3</li> 
+                <li class="pagination-btn">Next</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="widget-row widget-row-50">
+        <div class="widget-area">
+            <div class="table-actions">
+                <div class="table-title">
+                    Recente initiële controles
+                </div>
+        
+                <a href="" class="link-primary">Bekijk alle</a>
+            </div>
+        
+            <table class="table table-default">
+                <thead>
+                    <tr>
+                        <th class="th-sort">Bedrijfsnaam</th>
+                        <th class="th-sort">Registratiedatum</th>
+                        <th class="th-sort th-center">Status</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        
+            <div class="table-pagination">
+                <div class="pagination-total">
+                    Showing <span>1</span> to <span>5</span> of <span>23</span> entries
+                </div>
+                <ul class="pagination">
+                <li class="pagination-btn">Previous</li> 
+                <li class="pagination-btn active">1</li> 
+                <li class="pagination-btn">2</li> 
+                <li class="pagination-btn">3</li> 
+                <li class="pagination-btn">Next</li> 
+                </ul>
+            </div>
+        </div>
+
+        <div class="widget-area">
+            <div class="table-actions">
+                <div class="table-title">
+                    Recente doorlopende controles
+                </div>
+        
+                <a href="" class="link-primary">Bekijk alle</a>
+            </div>
+        
+            <table class="table table-default">
+                <thead>
+                    <tr>
+                        <th class="th-sort">Bedrijfsnaam</th>
+                        <th class="th-sort">Registratiedatum</th>
+                        <th class="th-sort th-center">Status</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td class="status status-error"><i class="fa fa-circle"></i></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        
+            <div class="table-pagination">
+                <div class="pagination-total">
+                    Showing <span>1</span> to <span>5</span> of <span>23</span> entries
+                </div>
+                <ul class="pagination">
+                <li class="pagination-btn">Previous</li> 
+                <li class="pagination-btn active">1</li> 
+                <li class="pagination-btn">2</li> 
+                <li class="pagination-btn">3</li> 
+                <li class="pagination-btn">Next</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

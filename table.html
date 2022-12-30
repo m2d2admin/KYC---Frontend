@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KYC Table</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script></head>
+
+<body>
+
+<div class="widget-area">
+
+    <div class="table-actions">
+        <div class="table-title">
+            Recente Klanten
+        </div>
+
+        <a class="table-add">
+            Nieuwe klant toevoegen
+        </a>
+    </div>
+
+    <table class="table table-default">
+        <thead>
+            <tr>
+                <th class="th-sort">Klantnaam</th>
+                <th class="th-sort">Datum</th>
+                <th class="th-sort">Laatste wijziging</th>
+                <th class="th-sort th-center">Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>4EVER49</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-success"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr>
+                <td>4EVER49Jobs</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-error"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr>
+                <td>4EVER49Radio</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-onhold"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr>
+                <td>RhoDelta Travel</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-success"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr>
+                <td>WoonZilver</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-success"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr>
+                <td>4EVER49</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-success"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr>
+                <td>4EVER49Jobs</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-error"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr>
+                <td>4EVER49Radio</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-onhold"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr>
+                <td>RhoDelta Travel</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-success"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr>
+                <td>WoonZilver</td>
+                <td>21-05-2022</td>
+                <td>25-10-2022</td>
+                <td class="status status-success"><i class="fa fa-circle"></i></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <div class="table-pagination">
+        <div class="pagination-total">
+            Showing <span>1</span> to <span>10</span> of <span>43</span> entries
+        </div>
+        <ul class="pagination">
+           <li class="pagination-btn">Previous</li> 
+           <li class="pagination-btn active">1</li> 
+           <li class="pagination-btn">2</li> 
+           <li class="pagination-btn">3</li> 
+           <li class="pagination-btn">4</li> 
+           <li class="pagination-btn">5</li> 
+           <li class="pagination-btn">Next</li> 
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+
+<style>
+body {
+    background: #1C2039;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+/* ICONS */
+i {
+    font-size: 20px;
+    font-family: 'FontAwesome', 'sans-serif';
+}
+
+.status-success {
+    color: #559C8E;
+}
+
+.status-error {
+    color: #E92E5A;
+}
+
+.status-onhold {
+    color: #ABABAB;
+}
+
+/* WIDGET AREA */
+.widget-area {
+    width: 50%;
+    background: #262B49;
+    margin: 20px; 
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* TABLES */
+.table-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+    padding: 0px 20px;
+
+    line-height: 60px;
+    font-size: 18px;
+}
+
+.table-actions .table-add {
+    position: relative;
+    padding-left: 25px;
+    text-decoration: underline;
+}
+
+
+.table-actions .table-add:before {
+    position: absolute;
+    left: 0px;
+
+    content:'\2b';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Table Head */
+.table thead {
+    background: #212642;
+    color: #ABABAB;
+    height: 45px;
+    padding: 0px 20px;
+
+    line-height: 45px;
+    font-size: 14px;
+}
+
+.table thead tr {
+    text-align: left;
+}
+
+.table thead .th-center {
+    text-align: center;
+}
+
+.table thead .th-sort {
+    padding: 0px 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.table thead .th-sort:after {
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+    content: '\f0dc';
+    font-family: 'FontAwesome', 'sans-serif';
+}
+
+.table thead .th-sort:first-child {
+    padding-left: 20px;
+}
+
+.table thead .th-sort:last-child {
+    padding-right: 20px;
+}
+
+
+/* Table Body */
+.table tbody {
+    font-size: 16px;
+}
+
+.table tbody tr {
+    height: 55px;
+    border-bottom: 2px solid #212642; 
+    transition: all 0.4s;
+}
+
+.table tbody tr:last-child {
+    border: none;
+}
+
+.table tbody tr:hover {
+    background: #212642;
+}
+
+.table tbody td {
+    padding: 0px 10px;
+}
+
+.table tbody td:first-child {
+    padding-left: 20px;
+}
+
+.table tbody td:last-child {
+    padding-right: 20px;
+}
+
+.table tbody td.status {
+    text-align: center;
+}
+
+/* Table Pagination */
+.table-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 2px solid #212642;
+}
+
+.table-pagination .pagination-total span {
+    font-weight: 600;
+}
+
+.table-pagination .pagination {
+    list-style-type: none;
+}
+
+.table-pagination .pagination .pagination-btn {
+    float: left;
+    width: 32px;
+    height: 32px;
+
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.table-pagination .pagination .pagination-btn:first-child, 
+.table-pagination .pagination .pagination-btn:last-child {
+    width: auto;
+    padding: 0px 10px;
+}
+
+.table-pagination .pagination .pagination-btn:hover {
+    background: #1C2039;
+}
+
+.table-pagination .pagination .pagination-btn.active {
+    background: white;
+    color: #212642;
+}
+</style>

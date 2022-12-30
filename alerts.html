@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KYC Alerts</title>
+
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+</head>
+
+<body>
+<div class="widget-area">
+    <div class="alert alert-success">
+        <div class="alert-icon"><i class="fa fa-check"></i></div>
+        <span>Dit is een positief bericht</span>
+    </div>
+
+    <div class="alert alert-error">
+        <div class="alert-icon"><i class="fa fa-times"></i></div>
+        <span>Dit is een negatief bericht</span>
+    </div>
+
+    <div class="alert alert-warning">
+        <div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
+        <span>Dit is een waarschuwing / actie</span>
+    </div>
+</div>
+</body>
+</html>
+
+<style>
+body {
+    background: #1C2039;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* ICONS */
+i {
+    font-size: 20px;
+    font-family: 'FontAwesome', 'sans-serif';
+}
+
+/* WIDGET AREA */
+.widget-area {
+    width: 50%;
+}
+
+/* ALERT */
+.alert {
+    margin: 10px;
+    padding: 10px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.alert span {
+    padding: 0 20px;
+}
+
+.alert-success {
+    background: #559C8E;
+
+    border: 2px solid #124339;
+}
+
+.alert-success span {
+    color: #124339
+}
+
+.alert-error {
+    background: #E92E5A;
+    border: 2px solid #751A2F;
+}
+
+.alert-error span {
+    color: #751A2F;
+}
+
+.alert-warning {
+    background: #ffeeba;
+
+    border: 2px solid #B99525;
+}
+
+.alert-warning span {
+    color: #B99525;
+}
+
+/* Alert Icon */
+.alert-icon {
+    padding: 10px;
+    min-width: 50px;
+
+    text-align: center;
+    font-size: 30px;    
+}
+
+.alert-success .alert-icon {
+    color: #124339;
+    border-right: 2px solid #124339;
+}
+
+.alert-error .alert-icon {
+    color: #751A2F;
+    border-right: 2px solid #751A2F;
+}
+
+.alert-warning .alert-icon {
+    color: #B99525;
+    border-right: 2px solid #B99525;
+}
+</style>

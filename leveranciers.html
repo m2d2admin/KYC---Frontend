@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leveranciers</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+<div class="sidebar">
+    <a id="sidebarBtn" class="btn-collapse"><i class="fa fa-caret-right"></i></a>
+
+    <div class="logo">
+        <img src="img/logo-placeholder.png"/>
+    </div>
+
+    <div class="menu-area">
+        <ul class="menu main-menu">
+            <li class="menu-item">
+                <a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a>
+            </li>
+            <li class="menu-item">
+                <a href="klanten.html"><i class="fa fa-user-tie"></i>Klanten</a>
+            </li>
+            <li class="menu-item">
+                <a href="leveranciers.html" class="active"><i class="fa-solid fa-truck"></i>Leveranciers</a>
+            </li>
+            <li class="menu-item">
+                <a href="userprofile.html"><i class="fa fa-address-card"></i>Profiel</a>
+            </li>
+        </ul>
+        <div class="menu-divider"></div>
+        <ul class="menu admin-menu">
+            <li class="menu-item">
+                <a href="gebruikers.html"><i class="fa fa-users"></i>Gebruikers</a>
+            </li>
+            <li class="menu-item">
+                <a href="rollen.html"><i class="fa fa-suitcase"></i>Rollen</a>
+            </li>
+            <li class="menu-item">
+                <a href="organisatie.html"><i class="fa fa-building"></i>Organisatie</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sponsor">
+        <span>Sponsored by:</span>
+        <img src="img/logo-white.png"/>
+    </div>
+</div>
+<div class="page-content">
+    <div class="widget-row">
+        <div class="page-intro">
+            <span class="page-title">Leveranciers</span>
+            <span class="page-desc">Hier zie je een overzicht van alle leveranciers</span>
+        </div>
+    </div>        
+
+    <div class="widget-row">
+        <div class="widget-area">
+            <div class="table-actions">
+                <div class="table-title">
+                    Leveranciersoverzicht
+                </div>
+        
+                <a class="table-add modal-button" href="#modalSupplierAdd">Nieuwe leverancier toevoegen</a>
+            </div>
+            
+            <table class="table table-default">
+                <thead>
+                    <tr>
+                        <th class="th-sort">Bedrijfsnaam</th>
+                        <th class="th-sort">Registratiedatum</th>
+                        <th class="th-sort">Laatste wijziging</th>
+                        <th class="th-sort th-center">Bewerken</th>
+                        <th class="th-sort th-center">Controles</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td class="modal-button" href="#modalSupplierView">Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td>07-12-2022</td>
+                        <td class="action"><a class="modal-button" href="#modalSupplierEdit"><i class="fa fa-pencil"></i></a></td>
+                        <td class="controls">
+                            <img src="icons/IC-icon--filled.svg" class="control control-success modal-button" href="#modalIC" width="30" height="30">
+                            <img src="icons/DC-icon--filled.svg" class="control control-error modal-button" href="#modalDC" width="30" height="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="modal-button" href="#modalSupplierView">Skipdemakelaar</td>
+                        <td>21-05-2022</td>
+                        <td>07-12-2022</td>
+                        <td class="action"><a class="modal-button" href="#modalSupplierEdit"><i class="fa fa-pencil"></i></a></td>
+                        <td class="controls">
+                            <img src="icons/IC-icon--filled.svg" class="control control-progress modal-button" href="#modalIC" width="30" height="30">
+                            <img src="icons/DC-icon--filled.svg" class="control control-onhold modal-button" href="#modalDC" width="30" height="30">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <div class="table-pagination">
+                <div class="pagination-total">
+                    Showing <span>1</span> to <span>5</span> of <span>23</span> entries
+                </div>
+                <ul class="pagination">
+                <li class="pagination-btn">Previous</li> 
+                <li class="pagination-btn active">1</li> 
+                <li class="pagination-btn">2</li> 
+                <li class="pagination-btn">3</li> 
+                <li class="pagination-btn">Next</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalSupplierAdd" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Nieuwe leverancier toevoegen</span>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                    <span class="form-section--title">Leveranciersgegevens</span>
+                
+                    <div class="form-field">
+                        <label>Bedrijf</label>
+                        <input type="text" required/>
+                    </div>
+                    <div class="form-field">
+                        <label>BTW nummer</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>KVK nummer</label>
+                        <input type="text" />
+                    </div>
+
+                    <span class="form-section--title">Adres</span>
+
+                    <div class="form-field">
+                        <label>Straat</label>
+                        <input type="text" required/>
+                    </div>
+                    <div class="form-field">
+                        <label>Huisnummer</label>
+                        <input type="number"  required/>
+                    </div>
+                    <div class="form-field">
+                        <label>Toevoeging</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>Postcode</label>
+                        <input type="text"  required/>
+                    </div>
+                    <div class="form-field">
+                        <label>Plaats</label>
+                        <input type="text"  required/>
+                    </div>
+                    <div class="form-field">
+                        <label>Land</label>
+                        <input type="text"  required/>
+                    </div>
+
+                    <span class="form-section--title">Adres 2</span>
+
+                    <div class="form-field">
+                        <label>Straat</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Huisnummer</label>
+                        <input type="number" />
+                    </div>
+                    <div class="form-field">
+                        <label>Toevoeging</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>Postcode</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>Plaats</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>Land</label>
+                        <input type="text" />
+                    </div>
+
+                    <span class="form-section--title">Contactgegevens</span>
+
+                    <div class="form-field">
+                        <label>Voornaam</label>
+                        <input type="text" required/>
+                    </div>
+                    <div class="form-field">
+                        <label>Achternaam</label>
+                        <input type="text" required/>
+                    </div>
+                    <div class="form-field">
+                        <label>Email</label>
+                        <input type="email" required/>
+                    </div>
+                    <div class="form-field">
+                        <label>Telefoonnummer</label>
+                        <input type="tel" />
+                    </div>
+                    <div class="form-field">
+                        <label>Mobielnummer</label>
+                        <input type="tel" />
+                    </div>
+
+                    <span class="form-section--title">Extra</span>
+                    
+                    <div class="form-field">
+                        <label>Notitie</label>
+                        <textarea></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-outline btn-close">Annuleren</a>
+                <a class="btn btn-primary">Opslaan</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalSupplierEdit" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Leverancier bewerken</span>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                    <span class="form-section--title">Leveranciersgegevens</span>
+
+                    <div class="form-field">
+                        <label>Bedrijf</label>
+                        <input type="text" placeholder="Skipdemakelaar"/>
+                    </div>
+                    <div class="form-field">
+                        <label>BTW nummer</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>KVK nummer</label>
+                        <input type="text" />
+                    </div>
+
+                    <span class="form-section--title">Adres</span>
+
+                    <div class="form-field">
+                        <label>Straat</label>
+                        <input type="text" placeholder="Escudostraat"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Huisnummer</label>
+                        <input type="number" placeholder="2"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Toevoeging</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>Postcode</label>
+                        <input type="text"  placeholder="2991XV"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Plaats</label>
+                        <input type="text" placeholder="Barendrecht"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Land</label>
+                        <input type="text" placeholder="Nederland"/>
+                    </div>
+
+                    <span class="form-section--title">Adres 2</span>
+
+                    <div class="form-field">
+                        <label>Straat</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Huisnummer</label>
+                        <input type="number" />
+                    </div>
+                    <div class="form-field">
+                        <label>Toevoeging</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>Postcode</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>Plaats</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label>Land</label>
+                        <input type="text" />
+                    </div>
+
+                    <span class="form-section--title">Contactgegevens</span>
+
+
+                    <div class="form-field">
+                        <label>Voornaam</label>
+                        <input type="text" placeholder="Stanley"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Achternaam</label>
+                        <input type="text" placeholder="Messi"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Email</label>
+                        <input type="email" placeholder="stanley.messi@skip.com"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Telefoonnummer</label>
+                        <input type="tel" placeholder="0101234567"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Mobielnummer</label>
+                        <input type="tel" placeholder="0612345678"/>
+                    </div>
+
+                    <span class="form-section--title">Extra</span>
+
+                    <div class="form-field">
+                        <label>Notitie</label>
+                        <textarea></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-outline btn-close">Annuleren</a>
+                <a class="btn btn-primary">Opslaan</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modalSupplierView" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Leverancier
+                    <img src="icons/IC-icon--filled.svg" class="control control-success modal-button" href="#modalIC" width="30" height="30">
+                    <img src="icons/DC-icon--filled.svg" class="control control-error modal-button" href="#modalDC" width="30" height="30">
+                </span>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <span class="form-section--title">Leveranciersgegevens</span>
+
+                    <div class="form-field">
+                        <label>Bedrijf</label>
+                        <span>Skipdemakelaar</span>
+                    </div>
+                    <div class="form-field">
+                        <label>BTW nummer</label>
+                        <span>01234567890</span>
+                    </div>
+                    <div class="form-field">
+                        <label>KVK nummwe</label>
+                        <span>1234567890B01</span>
+                    </div>
+
+                    <span class="form-section--title">Adres</span>
+
+                    <div class="form-field">
+                        <label>Straat</label>
+                        <span>Escudostraat</span>
+                    </div>
+                    <div class="form-field">
+                        <label>Huisnummer</label>
+                        <span>2</span>
+                    </div>
+                    <div class="form-field">
+                        <label>Postcode</label>
+                        <span>2991XV</span>
+                    </div>
+                    <div class="form-field">
+                        <label>Plaats</label>
+                        <span>Barendrecht</span>
+                    </div>
+                    <div class="form-field">
+                        <label>Land</label>
+                        <span>Nederland</span>
+                    </div>
+
+                    <span class="form-section--title">Contactgegevens</span>
+
+                    <div class="form-field">
+                        <label>Voornaam</label>
+                        <span>Stanley</span>
+                    </div>
+                    <div class="form-field">
+                        <label>Achternaam</label>
+                        <span>Messi</span>
+                    </div>
+                    <div class="form-field">
+                        <label>Email</label>
+                        <span>stanley.messi@skip.com</span>
+                    </div>
+                    <div class="form-field">
+                        <label>Telefoonnummer</label>
+                        <span>0101234567</span>
+                    </div>
+                    <div class="form-field">
+                        <label>Mobielnummer</label>
+                        <span>0612345678</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalIC" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Initiele Controle</span>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-outline btn-close">Annuleren</a>
+                <a class="btn btn-primary">Opslaan</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalDC" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Doorlopende Controle</span>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-outline btn-close">Annuleren</a>
+                <a class="btn btn-primary">Opslaan</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
