@@ -886,8 +886,14 @@ input[type="file"] {
 
 /* Form steps */
 .steps-container {
+    margin-bottom: 20px;
+    position: sticky;
+    top: -1px;
+    padding: 10px 40px 0px;
+    background: var(--color-secondary);
     width: 100%;
     border-bottom: 2px solid white;
+    box-sizing: border-box;
 }
 
 .steps-container .steps {
@@ -1076,6 +1082,13 @@ body.modal-open {
     max-height: calc(100vh - 400px);
 }
 
+.modal-steps .modal-body {
+    padding: 0px 0px 20px 0px;
+}
+
+.modal-steps .form-tab {
+    padding: 0px 40px 60px 40px;
+}
 
 /* Modal Footer */
 .modal-footer {
