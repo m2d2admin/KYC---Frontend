@@ -100,11 +100,18 @@ i {
 .link-primary {
     color: white;
     text-decoration: underline;
+    font-size: 16px;
+    font-weight: 400;
     cursor: pointer;
 }
 
 .link-primary:hover {
     color: var(--color-accent);
+}
+
+.modal-title .link-primary {
+    float: right;
+    margin-right: 40px;
 }
 
 .forgot-password {
