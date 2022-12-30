@@ -62,13 +62,13 @@
         <div class="widget-area">
             <div class="profile">
 
-                <a class="profile--edit modal-button" href="#modalProfileEdit"><i class="fa fa-edit"></i></a>
+                <a class="profile--edit modal-button" href="#modalOrganisationEdit"><i class="fa fa-edit"></i></a>
 
                 <div class="avatar">
                     <div class="avatar-wrapper">
-                        <img src="img/placeholder.png">
+                        <img src="img/logo/logo-wit.svg">
                     </div>
-                    <a class="link-primary modal-button" href="#modalAvatarEdit">Bewerken</a>
+                    <a class="link-primary modal-button" href="#modalLogoEdit">Bewerken</a>
                 </div>
 
                 <div class="profile-details">
@@ -132,75 +132,47 @@
         </div>
     </div>
 
-    <div id="modalProfileEdit" class="modal">
+    <div id="modalOrganisationEdit" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Profiel bewerken</span>
+                <span class="modal-title">Organisatie bewerken</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
                 <form>
-                    <span class="form-section--title">Gebruiker</span>
-
-                    <div class="form-field">
-                        <label>Voornaam</label>
-                        <input type="text" placeholder="Navarone"/>
-                    </div>
-                    <div class="form-field">
-                        <label>Achternaam</label>
-                        <input type="text" placeholder="de Graaf"/>
-                    </div>
-                    <div class="form-field">
-                        <label>Bedrijf</label>
-                        <input type="text" placeholder="M2-D2"/>
-                    </div>
-                    <div class="form-field">
-                        <label>Rol</label>
-                        <select>
-                            <option>Management</option>
-                            <option>Sales</option>
-                            <option>Inkoop</option>
-                            <option>Logistiek</option>
-                            <option>Finance</option>
-                            <option>Audit</option>
-                            <option>Administrator</option>
-                        </select>
-                    </div>
-                    <div class="form-field">
-                        <label>Huidig wachtwoord</label>
-                        <input type="password"/>
-                    </div>
-                    <div class="form-field">
-                        <label>Nieuw wachtwoord</label>
-                        <input type="password"/>
-                    </div>
-                    <div class="form-field">
-                        <label>Bevstig wachtwoord</label>
-                        <input type="password"/>
-                    </div>
-
                     <span class="form-section--title">Bedrijfsgegevens</span>
 
                     <div class="form-field">
+                        <label>Bedrijf</label>
+                        <input type="text" placeholder="Rho Delta ACP"/>
+                    </div>
+                    <div class="form-field">
+                        <label>Vestiging</label>
+                        <input type="text" placeholder="Hoofdkantoor"/>
+                    </div>
+
+                    <span class="form-section--title">Locatie</span>
+
+                    <div class="form-field">
                         <label>Straat</label>
-                        <input type="text" placeholder="Stieltjesstraat"/>
+                        <input type="text" placeholder="Escudostraat"/>
                     </div>
                     <div class="form-field">
                         <label>Huisnummer</label>
-                        <input type="number" placeholder="8"/>
+                        <input type="number" placeholder="2"/>
                     </div>
                     <div class="form-field">
                         <label>Toevoeging</label>
-                        <input type="text" placeholder="K"/>
+                        <input type="text" placeholder=""/>
                     </div>
                     <div class="form-field">
                         <label>Postcode</label>
-                        <input type="text"  placeholder="3071 JW"/>
+                        <input type="text"  placeholder="2991 XV"/>
                     </div>
                     <div class="form-field">
                         <label>Plaats</label>
-                        <input type="text" placeholder="Rotterdam"/>
+                        <input type="text" placeholder="Barendrecht"/>
                     </div>
                     <div class="form-field">
                         <label>Land</label>
@@ -208,11 +180,6 @@
                     </div>
 
                     <span class="form-section--title">Contactgegevens</span>
-
-                    <div class="form-field">
-                        <label>Email</label>
-                        <input type="email" placeholder="navarone.degraaf@m2-d2.com"/>
-                    </div>
                     <div class="form-field">
                         <label>Telefoonnummer</label>
                         <input type="tel" placeholder="0101234567"/>
@@ -221,8 +188,21 @@
                         <label>Mobielnummer</label>
                         <input type="tel" placeholder="0612345678"/>
                     </div>
+                    <div class="form-field">
+                        <label>Email</label>
+                        <input type="email" placeholder="acp@rholdelta.com"/>
+                    </div>
+                    
 
                     <span class="form-section--title">Extra</span>
+                    <div class="form-field">
+                        <label>KVK nummer</label>
+                        <input type="text" placeholder="12456789"/>
+                    </div>
+                    <div class="form-field">
+                        <label>BTW nummer</label>
+                        <input type="text" placeholder="NL123456778B01"/>
+                    </div>
                     <div class="form-field">
                         <label>Notitie</label>
                         <textarea placeholder="Indien bladibla dan bladibla"></textarea>
@@ -236,7 +216,7 @@
         </div>
     </div>
 
-    <div id="modalAvatarEdit" class="modal">
+    <div id="modalLogoEdit" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
