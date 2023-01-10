@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Leveranciers</title>
+  <title>Suppliers</title>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -23,25 +23,25 @@
                 <a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a>
             </li>
             <li class="menu-item">
-                <a href="klanten.html"><i class="fa fa-user-tie"></i>Klanten</a>
+                <a href="klanten.html"><i class="fa fa-user-tie"></i>Customers</a>
             </li>
             <li class="menu-item">
-                <a href="leveranciers.html" class="active"><i class="fa-solid fa-truck"></i>Leveranciers</a>
+                <a href="leveranciers.html" class="active"><i class="fa-solid fa-truck"></i>Suppliers</a>
             </li>
             <li class="menu-item">
-                <a href="userprofile.html"><i class="fa fa-address-card"></i>Profiel</a>
+                <a href="userprofile.html"><i class="fa fa-address-card"></i>User profile</a>
             </li>
         </ul>
         <div class="menu-divider"></div>
         <ul class="menu admin-menu">
             <li class="menu-item">
-                <a href="gebruikers.html"><i class="fa fa-users"></i>Gebruikers</a>
+                <a href="gebruikers.html"><i class="fa fa-users"></i>Users</a>
             </li>
             <li class="menu-item">
-                <a href="rollen.html"><i class="fa fa-suitcase"></i>Rollen</a>
+                <a href="rollen.html"><i class="fa fa-suitcase"></i>Roles</a>
             </li>
             <li class="menu-item">
-                <a href="organisatie.html"><i class="fa fa-building"></i>Organisatie</a>
+                <a href="organisatie.html"><i class="fa fa-building"></i>Organisation</a>
             </li>
         </ul>
     </div>
@@ -54,8 +54,8 @@
 <div class="page-content">
     <div class="widget-row">
         <div class="page-intro">
-            <span class="page-title">Leveranciers</span>
-            <span class="page-desc">Hier zie je een overzicht van alle leveranciers</span>
+            <span class="page-title">Suppliers</span>
+            <span class="page-desc">Here you'll see and overview of all suppliers</span>
         </div>
     </div>        
 
@@ -63,20 +63,20 @@
         <div class="widget-area">
             <div class="table-actions">
                 <div class="table-title">
-                    Leveranciersoverzicht
+                    Supplier overvoew
                 </div>
         
-                <a class="table-add modal-button" href="#modalSupplierAdd">Nieuwe leverancier toevoegen</a>
+                <a class="table-add modal-button" href="#modalSupplierAdd">Add new suppliers</a>
             </div>
             
             <table class="table table-default">
                 <thead>
                     <tr>
-                        <th class="th-sort">Bedrijfsnaam</th>
-                        <th class="th-sort">Registratiedatum</th>
-                        <th class="th-sort">Laatste wijziging</th>
-                        <th class="th-sort th-center">Bewerken</th>
-                        <th class="th-sort th-center">Controles</th>
+                        <th class="th-sort">Company name</th>
+                        <th class="th-sort">Registration date</th>
+                        <th class="th-sort">Last changes</th>
+                        <th class="th-sort th-center">Edit</th>
+                        <th class="th-sort th-center">Checks</th>
                     </tr>
                 </thead>
         
@@ -123,89 +123,89 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Nieuwe leverancier toevoegen</span>
+                <span class="modal-title">Add new supplier</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
                 <form>
 
-                    <span class="form-section--title">Leveranciersgegevens</span>
+                    <span class="form-section--title">Supplier details</span>
                 
                     <div class="form-field">
-                        <label>Bedrijf</label>
+                        <label>Company</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
-                        <label>BTW nummer</label>
+                        <label>VAT number</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>KVK nummer</label>
+                        <label>CoC number</label>
                         <input type="text" />
                     </div>
 
-                    <span class="form-section--title">Adres</span>
+                    <span class="form-section--title">Adress</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
+                        <label>Street</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <input type="number"  required/>
                     </div>
                     <div class="form-field">
-                        <label>Toevoeging</label>
+                        <label>Addition</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <input type="text"  required/>
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <input type="text"  required/>
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <input type="text"  required/>
                     </div>
 
-                    <span class="form-section--title">Adres 2</span>
+                    <span class="form-section--title">Adress 2</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
+                        <label>Street</label>
                         <input type="text"/>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <input type="number" />
                     </div>
                     <div class="form-field">
-                        <label>Toevoeging</label>
+                        <label>Addition</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <input type="text" />
                     </div>
 
-                    <span class="form-section--title">Contactgegevens</span>
+                    <span class="form-section--title">Contact details</span>
 
                     <div class="form-field">
-                        <label>Voornaam</label>
+                        <label>First name</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
-                        <label>Achternaam</label>
+                        <label>Last name</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
@@ -213,25 +213,25 @@
                         <input type="email" required/>
                     </div>
                     <div class="form-field">
-                        <label>Telefoonnummer</label>
+                        <label>Phone number</label>
                         <input type="tel" />
                     </div>
                     <div class="form-field">
-                        <label>Mobielnummer</label>
+                        <label>Mobile phone number</label>
                         <input type="tel" />
                     </div>
 
                     <span class="form-section--title">Extra</span>
                     
                     <div class="form-field">
-                        <label>Notitie</label>
+                        <label>Notes</label>
                         <textarea></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -240,90 +240,90 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Leverancier bewerken</span>
+                <span class="modal-title">Edit supplier</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
                 <form>
 
-                    <span class="form-section--title">Leveranciersgegevens</span>
+                    <span class="form-section--title">Supplier details</span>
 
                     <div class="form-field">
-                        <label>Bedrijf</label>
+                        <label>Company</label>
                         <input type="text" placeholder="Skipdemakelaar"/>
                     </div>
                     <div class="form-field">
-                        <label>BTW nummer</label>
+                        <label>VAT number</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>KVK nummer</label>
+                        <label>CoC number</label>
                         <input type="text" />
                     </div>
 
-                    <span class="form-section--title">Adres</span>
+                    <span class="form-section--title">Adress</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
+                        <label>Street</label>
                         <input type="text" placeholder="Escudostraat"/>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <input type="number" placeholder="2"/>
                     </div>
                     <div class="form-field">
-                        <label>Toevoeging</label>
+                        <label>Addition</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <input type="text"  placeholder="2991XV"/>
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <input type="text" placeholder="Barendrecht"/>
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <input type="text" placeholder="Nederland"/>
                     </div>
 
-                    <span class="form-section--title">Adres 2</span>
+                    <span class="form-section--title">Adress 2</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
+                        <label>Street</label>
                         <input type="text"/>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <input type="number" />
                     </div>
                     <div class="form-field">
-                        <label>Toevoeging</label>
+                        <label>Addition</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <input type="text" />
                     </div>
 
-                    <span class="form-section--title">Contactgegevens</span>
+                    <span class="form-section--title">Contact details</span>
 
 
                     <div class="form-field">
-                        <label>Voornaam</label>
+                        <label>First name</label>
                         <input type="text" placeholder="Stanley"/>
                     </div>
                     <div class="form-field">
-                        <label>Achternaam</label>
+                        <label>Last name</label>
                         <input type="text" placeholder="Messi"/>
                     </div>
                     <div class="form-field">
@@ -331,25 +331,25 @@
                         <input type="email" placeholder="stanley.messi@skip.com"/>
                     </div>
                     <div class="form-field">
-                        <label>Telefoonnummer</label>
+                        <label>Phone number</label>
                         <input type="tel" placeholder="0101234567"/>
                     </div>
                     <div class="form-field">
-                        <label>Mobielnummer</label>
+                        <label>Mobile phone number</label>
                         <input type="tel" placeholder="0612345678"/>
                     </div>
 
                     <span class="form-section--title">Extra</span>
 
                     <div class="form-field">
-                        <label>Notitie</label>
+                        <label>Notes</label>
                         <textarea></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -359,7 +359,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Leverancier
+                <span class="modal-title">Supplier
                     <img src="icons/IC-icon--filled.svg" class="control control-success modal-button" href="#modalIC" width="30" height="30">
                     <img src="icons/DC-icon--filled.svg" class="control control-error modal-button" href="#modalDC" width="30" height="30">
                 </span>
@@ -367,52 +367,52 @@
             </div>
             <div class="modal-body">
                 <form>
-                    <span class="form-section--title">Leveranciersgegevens</span>
+                    <span class="form-section--title">Supplier details</span>
 
                     <div class="form-field">
-                        <label>Bedrijf</label>
+                        <label>Company</label>
                         <span>Skipdemakelaar</span>
                     </div>
                     <div class="form-field">
-                        <label>BTW nummer</label>
+                        <label>VAT number</label>
                         <span>01234567890</span>
                     </div>
                     <div class="form-field">
-                        <label>KVK nummwe</label>
+                        <label>CoC number</label>
                         <span>1234567890B01</span>
                     </div>
 
-                    <span class="form-section--title">Adres</span>
+                    <span class="form-section--title">Adress</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
+                        <label>Street</label>
                         <span>Escudostraat</span>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <span>2</span>
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <span>2991XV</span>
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <span>Barendrecht</span>
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <span>Nederland</span>
                     </div>
 
-                    <span class="form-section--title">Contactgegevens</span>
+                    <span class="form-section--title">Contact details</span>
 
                     <div class="form-field">
-                        <label>Voornaam</label>
+                        <label>First name</label>
                         <span>Stanley</span>
                     </div>
                     <div class="form-field">
-                        <label>Achternaam</label>
+                        <label>Last name</label>
                         <span>Messi</span>
                     </div>
                     <div class="form-field">
@@ -420,11 +420,11 @@
                         <span>stanley.messi@skip.com</span>
                     </div>
                     <div class="form-field">
-                        <label>Telefoonnummer</label>
+                        <label>Phone number</label>
                         <span>0101234567</span>
                     </div>
                     <div class="form-field">
-                        <label>Mobielnummer</label>
+                        <label>Mobile phone number</label>
                         <span>0612345678</span>
                     </div>
                 </form>
@@ -436,15 +436,15 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Initiele Controle</span>
+                <span class="modal-title">Initial check</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
 
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -453,15 +453,15 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Doorlopende Controle</span>
+                <span class="modal-title">Continuously check</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
 
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>

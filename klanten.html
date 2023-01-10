@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Klanten</title>
+  <title>Customers</title>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -23,25 +23,25 @@
                 <a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a>
             </li>
             <li class="menu-item">
-                <a href="klanten.html" class="active"><i class="fa fa-user-tie"></i>Klanten</a>
+                <a href="Customers.html" class="active"><i class="fa fa-user-tie"></i>Customers</a>
             </li>
             <li class="menu-item">
-                <a href="leveranciers.html"><i class="fa-solid fa-truck"></i>Leveranciers</a>
+                <a href="leveranciers.html"><i class="fa-solid fa-truck"></i>Suppliers</a>
             </li>
             <li class="menu-item">
-                <a href="userprofile.html"><i class="fa fa-address-card"></i>Profiel</a>
+                <a href="userprofile.html"><i class="fa fa-address-card"></i>User profile</a>
             </li>
         </ul>
         <div class="menu-divider"></div>
         <ul class="menu admin-menu">
             <li class="menu-item">
-                <a href="gebruikers.html"><i class="fa fa-users"></i>Gebruikers</a>
+                <a href="gebruikers.html"><i class="fa fa-users"></i>Users</a>
             </li>
             <li class="menu-item">
-                <a href="rollen.html"><i class="fa fa-suitcase"></i>Rollen</a>
+                <a href="rollen.html"><i class="fa fa-suitcase"></i>Roles</a>
             </li>
             <li class="menu-item">
-                <a href="organisatie.html"><i class="fa fa-building"></i>Organisatie</a>
+                <a href="organisatie.html"><i class="fa fa-building"></i>Organisation</a>
             </li>
         </ul>
     </div>
@@ -54,8 +54,8 @@
 <div class="page-content">
     <div class="widget-row">
         <div class="page-intro">
-            <span class="page-title">Klanten</span>
-            <span class="page-desc">Hier zie je een overzicht van alle klanten</span>
+            <span class="page-title">Customers</span>
+            <span class="page-desc">Here you'll find a overview of all customers</span>
         </div>
     </div>        
 
@@ -63,20 +63,20 @@
         <div class="widget-area">
             <div class="table-actions">
                 <div class="table-title">
-                    Klanten overzicht
+                    Customer overview
                 </div>
         
-                <a class="table-add modal-button" href="#modalClientAdd">Nieuwe klant toevoegen</a>
+                <a class="table-add modal-button" href="#modalClientAdd">Add new customer</a>
             </div>
             
             <table class="table table-default">
                 <thead>
                     <tr>
-                        <th class="th-sort">Klantnaam</th>
-                        <th class="th-sort">Registratiedatum</th>
-                        <th class="th-sort">Laatste wijziging</th>
-                        <th class="th-sort th-center">Bewerken</th>
-                        <th class="th-sort th-center">Controles</th>
+                        <th class="th-sort">Customer name</th>
+                        <th class="th-sort">Registration date</th>
+                        <th class="th-sort">Last changes</th>
+                        <th class="th-sort th-center">Edit</th>
+                        <th class="th-sort th-center">Checks</th>
                     </tr>
                 </thead>
         
@@ -144,89 +144,89 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Nieuwe klant toevoegen</span>
+                <span class="modal-title">Add new customer</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
                 <form>
 
-                    <span class="form-section--title">Bedrijfsgegevens</span>
+                    <span class="form-section--title">Company details</span>
 
                    
                     <div class="form-field">
-                        <label>Bedrijf</label>
+                        <label>Company</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
-                        <label>BTW nummer</label>
+                        <label>VAT number</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>KVK nummer</label>
+                        <label>CoC Number</label>
                         <input type="text" />
                     </div>
 
-                    <span class="form-section--title">Adres</span>
+                    <span class="form-section--title">Adress</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
+                        <label>Street</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <input type="number"  required/>
                     </div>
                     <div class="form-field">
-                        <label>Toevoeging</label>
+                        <label>Addition</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <input type="text"  required/>
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <input type="text"  required/>
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <input type="text"  required/>
                     </div>
 
-                    <span class="form-section--title">Adres 2</span>
+                    <span class="form-section--title">Adress 2</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
+                        <label>Street</label>
                         <input type="text"/>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <input type="number" />
                     </div>
                     <div class="form-field">
-                        <label>Toevoeging</label>
+                        <label>Addition</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <input type="text" />
                     </div>
 
-                    <span class="form-section--title">Contactgegevens</span>
+                    <span class="form-section--title">Contact details</span>
                     <div class="form-field">
-                        <label>Voornaam</label>
+                        <label>First name</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
-                        <label>Achternaam</label>
+                        <label>Last name</label>
                         <input type="text" required/>
                     </div> 
                     <div class="form-field">
@@ -234,25 +234,24 @@
                         <input type="email" required/>
                     </div>
                     <div class="form-field">
-                        <label>Telefoonnummer</label>
+                        <label>Phone number</label>
                         <input type="tel" />
                     </div>
                     <div class="form-field">
-                        <label>Mobielnummer</label>
+                        <label>Mobile phone number</label>
                         <input type="tel" />
                     </div>
 
                     <span class="form-section--title">Extra</span>
                     
                     <div class="form-field">
-                        <label>Notitie</label>
+                        <label>Notes</label>
                         <textarea></textarea>
                     </div>
                 </form>
             </div>
-            <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+            <div class="modal-footer">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -261,88 +260,88 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Klant bewerken</span>
+                <span class="modal-title">Edit customer</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
                 <form>
 
-                    <span class="form-section--title">Bedrijfsgegevens</span>
+                    <span class="form-section--title">Company details</span>
 
                     <div class="form-field">
-                        <label>Bedrijf</label>
+                        <label>Company</label>
                         <input type="text" placeholder="Skipdemakelaar"/>
                     </div>
                     <div class="form-field">
-                        <label>BTW nummer</label>
+                        <label>VAT number</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>KVK nummer</label>
+                        <label>CoC number</label>
                         <input type="text" />
                     </div>
 
-                    <span class="form-section--title">Adres</span>
+                    <span class="form-section--title">Adress</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
-                        <input type="text" placeholder="Escudostraat"/>
+                        <label>Street</label>
+                        <input type="text" placeholder="EscudoStreet"/>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <input type="number" placeholder="2"/>
                     </div>
                     <div class="form-field">
-                        <label>Toevoeging</label>
+                        <label>Addition</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <input type="text"  placeholder="2991XV"/>
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <input type="text" placeholder="Barendrecht"/>
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <input type="text" placeholder="Nederland"/>
                     </div>
 
-                    <span class="form-section--title">Adres 2</span>
+                    <span class="form-section--title">Adress 2</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
+                        <label>Street</label>
                         <input type="text"/>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <input type="number" />
                     </div>
                     <div class="form-field">
-                        <label>Toevoeging</label>
+                        <label>Addition</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <input type="text" />
                     </div>
 
-                    <span class="form-section--title">Contactgegevens</span>
+                    <span class="form-section--title">Contact details</span>
                     <div class="form-field">
-                        <label>Voornaam</label>
+                        <label>First name</label>
                         <input type="text" placeholder="Stanley"/>
                     </div>
                     <div class="form-field">
-                        <label>Achternaam</label>
+                        <label>Last name</label>
                         <input type="text" placeholder="Messi"/>
                     </div>
                     <div class="form-field">
@@ -350,25 +349,25 @@
                         <input type="email" placeholder="stanley.messi@skip.com"/>
                     </div>
                     <div class="form-field">
-                        <label>Telefoonnummer</label>
+                        <label>Phone number</label>
                         <input type="tel" placeholder="0101234567"/>
                     </div>
                     <div class="form-field">
-                        <label>Mobielnummer</label>
+                        <label>Mobile phone number</label>
                         <input type="tel" placeholder="0612345678"/>
                     </div>
 
                     <span class="form-section--title">Extra</span>
                     
                     <div class="form-field">
-                        <label>Notitie</label>
+                        <label>Notes</label>
                         <textarea></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -378,7 +377,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Klant
+                <span class="modal-title">Customer
                     <img src="icons/IC-icon--filled.svg" class="control control-success modal-button" href="#modalIC" width="40" height="40">
                     <img src="icons/addC-icon--filled.svg" class="control control-add modal-button" href="#modalDCNew" width="40" height="40">
                 </span>
@@ -386,52 +385,52 @@
             </div>
             <div class="modal-body">
                 <form>
-                    <span class="form-section--title">Bedrijfsgegevens</span>
+                    <span class="form-section--title">Company details</span>
 
                     <div class="form-field">
-                        <label>Bedrijf</label>
+                        <label>Company</label>
                         <span>Skipdemakelaar</span>
                     </div>
                     <div class="form-field">
-                        <label>BTW nummer</label>
+                        <label>VAT number</label>
                         <span>01234567890</span>
                     </div>
                     <div class="form-field">
-                        <label>KVK nummer</label>
+                        <label>CoC number</label>
                         <span>1234567890B01</span>
                     </div>
 
-                    <span class="form-section--title">Adres</span>
+                    <span class="form-section--title">Adress</span>
 
                     <div class="form-field">
-                        <label>Straat</label>
-                        <span>Escudostraat</span>
+                        <label>Street</label>
+                        <span>EscudoStreet</span>
                     </div>
                     <div class="form-field">
-                        <label>Huisnummer</label>
+                        <label>House number</label>
                         <span>2</span>
                     </div>
                     <div class="form-field">
-                        <label>Postcode</label>
+                        <label>Postal code</label>
                         <span>2991XV</span>
                     </div>
                     <div class="form-field">
-                        <label>Plaats</label>
+                        <label>City</label>
                         <span>Barendrecht</span>
                     </div>
                     <div class="form-field">
-                        <label>Land</label>
+                        <label>Country</label>
                         <span>Nederland</span>
                     </div>
 
-                    <span class="form-section--title">Contactgegevens</span>
+                    <span class="form-section--title">Contact details</span>
 
                     <div class="form-field">
-                        <label>Voornaam</label>
+                        <label>First name</label>
                         <span>Stanley</span>
                     </div>
                     <div class="form-field">
-                        <label>Achternaam</label>
+                        <label>Last name</label>
                         <span>Messi</span>
                     </div>
 
@@ -440,11 +439,11 @@
                         <span>stanley.messi@skip.com</span>
                     </div>
                     <div class="form-field">
-                        <label>Telefoonnummer</label>
+                        <label>Phone number</label>
                         <span>0101234567</span>
                     </div>
                     <div class="form-field">
-                        <label>Mobielnummer</label>
+                        <label>Mobile phone number</label>
                         <span>0612345678</span>
                     </div>
                 </form>
@@ -456,7 +455,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Nieuwe Initiele controle
+                <span class="modal-title">New Initial Check
                 </span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
@@ -483,28 +482,28 @@
                         <div class="form-field">
                             <label>De PNK wil slechts van één of twee verschillende producten afnemen</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <label>De waarde van de eerste transactie is meer dan € 50.000,-</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <label>De verwachte totale waarde van de transacties in een periode van twaalf maanden is meer dan € 100.000,-</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <div class="alert alert-error">
                                 <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                <span>Zodra er 3x "nee" word gekozen zal deze melding verschijnen</span>
+                                <span>Zodra er 3x "No" word gekozen zal deze melding verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -514,23 +513,23 @@
                 <div class="form-tab">
                     <form>
                         <div class="form-field">
-                            <label>Een relatief groot bedrijf met een omzet van minimaal € 100M dat aan consumenten een relatief breed pakket aan producten verkoopt? </label>
+                            <label>Een relatief groot Company met een omzet van minimaal € 100M dat aan consumenten een relatief breed pakket aan producten verkoopt? </label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <label></label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <div class="alert alert-error">
                                 <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                <span>Zodra er 1x "ja" word gekozen zal deze melding verschijnen</span>
+                                <span>Zodra er 1x "Yes" word gekozen zal deze melding verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -542,14 +541,14 @@
                         <div class="form-field">
                             <label>Een organisatie wiens hoofdkantoor in het buitenland gevestigd is en/of wiens zakelijke activiteiten zich hoofdzakelijk in het buitenland afspelen?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <div class="alert alert-warning">
                                 <div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
-                                <span>Zodra er "ja" word gekozen zal deze waarschuwing verschijnen</span>
+                                <span>Zodra er "Yes" word gekozen zal deze waarschuwing verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -568,15 +567,15 @@
                         <div class="form-field">
                             <label>Voldoet de PNK aan de eisen van het bezoekverslag</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
 
                         <div class="form-field">
                             <div class="alert alert-warning">
                                 <div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze waarschuwing verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze waarschuwing verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -587,20 +586,20 @@
                     <form> 
                         <div class="form-field">
                             <label>Door PNK opgegeven adres</label>
-                            <span>Pannekoekstraat 34</span>
+                            <span>PannekoekStreet 34</span>
                         </div>
                         <div class="form-field">
-                            <label>Is er een bedrijfspand aanwezig op het door de PNK opgegeven adres?</label>
+                            <label>Is er een Companyspand aanwezig op het door de PNK opgegeven adres?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
 
                         <div class="form-field">
                             <div class="alert alert-warning">
                                 <div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze waarschuwing verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze waarschuwing verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -619,15 +618,15 @@
                         <div class="form-field">
                             <label>Voldoet de PNK aan de eisen van het Nieuwe relatie formulier?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
 
                         <div class="form-field">
                             <div class="alert alert-warning">
                                 <div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze waarschuwing verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze waarschuwing verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -650,14 +649,14 @@
                         <div class="form-field">
                             <label>Is de PNK minimaal 6 maanden actief in de huidige branche?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <div class="alert alert-warning">
                                 <div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze waarschuwing verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze waarschuwing verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -667,14 +666,14 @@
                 <div class="form-tab">
                     <form> 
                         <div class="form-field">
-                            <label>Door de PNK opgegeven BTW nummer</label>
+                            <label>Door de PNK opgegeven VAT number</label>
                             <span>123456789</span>
                         </div>
                         <div class="form-field">
-                            <label>Is het BTW nummer van de PNK geldig?</label>
+                            <label>Is het VAT number van de PNK geldig?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
@@ -687,7 +686,7 @@
                         <div class="form-field">
                             <div class="alert alert-warning">
                                 <div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze waarschuwing verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze waarschuwing verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -706,14 +705,14 @@
                         <div class="form-field">
                             <label>Is de check bij Dun & Bradstreet succesvol verlopen?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <div class="alert alert-warning">
                                 <div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze waarschuwing verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze waarschuwing verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -732,14 +731,14 @@
                         <div class="form-field">
                             <label>Is de check bij Euler Hermans succesvol verlopen?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <div class="alert alert-warning">
                                 <div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze waarschuwing verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze waarschuwing verschijnen</span>
                             </div>
                         </div>
                     </form>
@@ -758,22 +757,22 @@
                         <div class="form-field">
                             <label>Zijn de referenties betrouwbaar?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
                             <div class="alert alert-error">
                                 <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze melding verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze melding verschijnen</span>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -815,15 +814,15 @@
                         <div class="form-field">
                             <label>Word de klant als betrouwbaar gezien na de controle?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
 <!--     
                         <div class="form-field">
                             <div class="alert alert-error">
                                 <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze melding verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze melding verschijnen</span>
                             </div>
                         </div> -->
                     </form>
@@ -835,15 +834,15 @@
                         <div class="form-field">
                             <label>Is de door de klant gevraagde afname van producten reëel op basis van de marktpositie</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
     
                         <!-- <div class="form-field">
                             <div class="alert alert-error">
                                 <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze melding verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze melding verschijnen</span>
                             </div>
                         </div> -->
                     </form>
@@ -853,22 +852,22 @@
                 <div class="form-tab">
                     <form>
                         <div class="form-field">
-                            <label>Is het BTW nummer van de klant correct?</label>
+                            <label>Is het VAT number van de klant correct?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
     
                         <div class="form-field">
-                            <label>Door klant opgegeven BTW nummer</label>
+                            <label>Door klant opgegeven VAT number</label>
                             <span>123456789</span>
                         </div>
     
                         <!-- <div class="form-field">
                             <div class="alert alert-error">
                                 <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze melding verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze melding verschijnen</span>
                             </div>
                         </div> -->
                     </form>
@@ -880,13 +879,13 @@
                         <div class="form-field">
                             <label>Vind de levering plaats buiten Nederland?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field"></div>
                                 <div class="form-field">
-                                    <label>Vrachtbrief (als vorig antwoord Ja is)</label>
+                                    <label>Vrachtbrief (als vorig antwoord Yes is)</label>
                                     <label for="file-upload" class="custom-file-upload">
                                         <i class="fa fa-cloud-upload"></i> Upload hier de vrachtbrief
                                     </label>
@@ -896,14 +895,14 @@
                                 <div class="form-field">
                                     <label>Is de vrachtbrief goedgekeurd?</label>
                                     <select required>
-                                        <option>Ja</option>
-                                        <option>Nee</option>
+                                        <option>Yes</option>
+                                        <option>No</option>
                                     </select>
                                 </div>
                                 <!-- <div class="form-field">
                                     <div class="alert alert-error">
                                         <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                        <span>Zodra er "nee" word gekozen zal deze melding verschijnen</span>
+                                        <span>Zodra er "No" word gekozen zal deze melding verschijnen</span>
                                     </div>
                                 </div> -->
                     </form>
@@ -911,8 +910,8 @@
             </div>
 
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -943,7 +942,7 @@
                         </div>
                         <div class="form-field">
                             <label>Word de klant als betrouwbaar gezien na de controle?</label>
-                            <span>Ja</span>
+                            <span>Yes</span>
                         </div>
                     </form>
                 </div>
@@ -953,7 +952,7 @@
                     <form>
                         <div class="form-field">
                             <label>Is de door de klant gevraagde afname van producten reëel op basis van de marktpositie</label>
-                            <span>ja</span>
+                            <span>Yes</span>
                         </div>
                     </form>
                 </div>
@@ -962,12 +961,12 @@
                 <div class="form-tab">
                     <form>
                         <div class="form-field">
-                            <label>Is het BTW nummer van de klant correct?</label>
-                            <span>Ja</span>
+                            <label>Is het VAT number van de klant correct?</label>
+                            <span>Yes</span>
                         </div>
     
                         <div class="form-field">
-                            <label>Door klant opgegeven BTW nummer</label>
+                            <label>Door klant opgegeven VAT number</label>
                             <span>123456789</span>
                         </div>
                     </form>
@@ -983,7 +982,7 @@
     
                         <div class="form-field">
                             <label>Is de vrachtbrief goedgekeurd?</label>
-                            <span>Ja</span>
+                            <span>Yes</span>
                         </div>
                     </form>
                 </div>
@@ -1017,8 +1016,8 @@
                         <div class="form-field">
                             <label>Word de klant als betrouwbaar gezien na de controle?</label>
                             <select>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
@@ -1036,8 +1035,8 @@
                         <div class="form-field">
                             <label>Is de door de klant gevraagde afname van producten reëel op basis van de marktpositie</label>
                             <select>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
     
@@ -1053,22 +1052,22 @@
                 <div class="form-tab">
                     <form>
                         <div class="form-field">
-                            <label>Door klant opgegeven BTW nummer</label>
+                            <label>Door klant opgegeven VAT number</label>
                             <span>123456789</span>
                         </div>
     
                         <div class="form-field">
-                            <label>Is het BTW nummer van de klant correct?</label>
+                            <label>Is het VAT number van de klant correct?</label>
                             <select required>
-                                <option>Nee</option>
-                                <option>Ja</option>
+                                <option>No</option>
+                                <option>Yes</option>
                             </select>
                         </div>
 
                         <div class="form-field">
                             <div class="alert alert-error">
                                 <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                <span>Aangezien er "nee" het opgegeven antwoord is, is de controle afgekeurd</span>
+                                <span>Aangezien er "No" het opgegeven antwoord is, is de controle afgekeurd</span>
                             </div>
                         </div>
                     </form>
@@ -1080,12 +1079,12 @@
                         <div class="form-field">
                             <label>Vind de levering plaats buiten Nederland?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                                 <div class="form-field">
-                                    <label>Vrachtbrief (als vorig antwoord Ja is)</label>
+                                    <label>Vrachtbrief (als vorig antwoord Yes is)</label>
                                     <label for="file-upload" class="custom-file-upload">
                                         <i class="fa fa-cloud-upload"></i> Upload hier de vrachtbrief
                                     </label>
@@ -1095,14 +1094,14 @@
                                 <div class="form-field">
                                     <label>Is de vrachtbrief goedgekeurd?</label>
                                     <select required>
-                                        <option>Ja</option>
-                                        <option>Nee</option>
+                                        <option>Yes</option>
+                                        <option>No</option>
                                     </select>
                                 </div>
                                 <!-- <div class="form-field">
                                     <div class="alert alert-error">
                                         <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                        <span>Zodra er "nee" word gekozen zal deze melding verschijnen</span>
+                                        <span>Zodra er "No" word gekozen zal deze melding verschijnen</span>
                                     </div>
                                 </div> -->
                     </form>
@@ -1110,8 +1109,8 @@
 
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -1141,8 +1140,8 @@
                         <div class="form-field">
                             <label>Word de klant als betrouwbaar gezien na de controle?</label>
                             <select>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                         <div class="form-field">
@@ -1160,8 +1159,8 @@
                         <div class="form-field">
                             <label>Is de door de klant gevraagde afname van producten reëel op basis van de marktpositie</label>
                             <select>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
     
@@ -1177,22 +1176,22 @@
                 <div class="form-tab">
                     <form>
                         <div class="form-field">
-                            <label>Door klant opgegeven BTW nummer</label>
+                            <label>Door klant opgegeven VAT number</label>
                             <span>123456789</span>
                         </div>
     
                         <div class="form-field">
-                            <label>Is het BTW nummer van de klant correct?</label>
+                            <label>Is het VAT number van de klant correct?</label>
                             <select required>
-                                <option>Nee</option>
-                                <option>Ja</option>
+                                <option>No</option>
+                                <option>Yes</option>
                             </select>
                         </div>
 
                         <!-- <div class="form-field">
                             <div class="alert alert-error">
                                 <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                <span>Zodra er "nee" word gekozen zal deze melding verschijnen</span>
+                                <span>Zodra er "No" word gekozen zal deze melding verschijnen</span>
                             </div>
                         </div> -->
                     </form>
@@ -1204,12 +1203,12 @@
                         <div class="form-field">
                             <label>Vind de levering plaats buiten Nederland?</label>
                             <select required>
-                                <option>Ja</option>
-                                <option>Nee</option>
+                                <option>Yes</option>
+                                <option>No</option>
                             </select>
                         </div>
                                 <div class="form-field">
-                                    <label>Vrachtbrief (als vorig antwoord Ja is)</label>
+                                    <label>Vrachtbrief (als vorig antwoord Yes is)</label>
                                     <label for="file-upload" class="custom-file-upload">
                                         <i class="fa fa-cloud-upload"></i> Upload hier de vrachtbrief
                                     </label>
@@ -1219,14 +1218,14 @@
                                 <div class="form-field">
                                     <label>Is de vrachtbrief goedgekeurd?</label>
                                     <select required>
-                                        <option>Ja</option>
-                                        <option>Nee</option>
+                                        <option>Yes</option>
+                                        <option>No</option>
                                     </select>
                                 </div>
                                 <!-- <div class="form-field">
                                     <div class="alert alert-error">
                                         <div class="alert-icon"><i class="fa fa-times"></i></div>
-                                        <span>Zodra er "nee" word gekozen zal deze melding verschijnen</span>
+                                        <span>Zodra er "No" word gekozen zal deze melding verschijnen</span>
                                     </div>
                                 </div> -->
                     </form>
@@ -1234,8 +1233,8 @@
 
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -1244,7 +1243,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Overzicht Doorlopende controles
+                <span class="modal-title">Overview continuously checks
                    
                 </span>
                 <span class="close"><i class="fa fa-close"></i></span>
@@ -1253,10 +1252,10 @@
                 <table class="table table-default">
                     <thead>
                         <tr>
-                            <th class="th-sort">Datum</th>
-                            <th class="th-sort">Reden</th>
+                            <th class="th-sort">Date</th>
+                            <th class="th-sort">Period</th>
                             <th class="th-sort th-center">Status</th>
-                            <th class="th-center">Actie</th>
+                            <th class="th-center">Action</th>
                         </tr>
                     </thead>
             
@@ -1269,19 +1268,19 @@
                         </tr>
                         <tr>
                             <td>18-09-2022</td>
-                            <td>Maandelijks</td>
+                            <td>Monthly</td>
                             <td class="status status-success"><i class="fa fa-circle"></i></td>
                             <td class="action"><a class="modal-button" href="#modalDCSuccess"><i class="fa fa-eye"></i></a></td>
                         </tr>
                         <tr>
                             <td>21-08-2022</td>
-                            <td>Maandelijks</td>
+                            <td>Monthly</td>
                             <td class="status status-success"><i class="fa fa-circle"></i></td>
                             <td class="action"><a class="modal-button" href="#modalDCSuccess"><i class="fa fa-eye"></i></a></td>
                         </tr>
                         <tr>
                             <td>09-03-2022</td>
-                            <td>Jaarlijks</td>
+                            <td>Annual</td>
                             <td class="status status-error"><i class="fa fa-circle"></i></td>
                             <td class="action"><a class="modal-button" href="#modalDCError"><i class="fa fa-eye"></i></a></td>
                         </tr>
@@ -1297,7 +1296,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Overzicht Initiële controles
+                <span class="modal-title">Overview initial checks
                    
                 </span>
                 <span class="close"><i class="fa fa-close"></i></span>
@@ -1306,9 +1305,9 @@
                 <table class="table table-default">
                     <thead>
                         <tr>
-                            <th class="th-sort">Stap</th>
+                            <th class="th-sort">Step</th>
                             <th class="th-sort th-center">Status</th>
-                            <th class="th-center">Actie</th>
+                            <th class="th-center">Action</th>
                         </tr>
                     </thead>
             

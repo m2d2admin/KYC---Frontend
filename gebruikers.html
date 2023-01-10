@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gebruikers</title>
+  <title>Users</title>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -23,25 +23,25 @@
                 <a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a>
             </li>
             <li class="menu-item">
-                <a href="klanten.html"><i class="fa fa-user-tie"></i>Klanten</a>
+                <a href="klanten.html"><i class="fa fa-user-tie"></i>Customers</a>
             </li>
             <li class="menu-item">
-                <a href="leveranciers.html"><i class="fa-solid fa-truck"></i>Leveranciers</a>
+                <a href="leveranciers.html"><i class="fa-solid fa-truck"></i>Suppliers</a>
             </li>
             <li class="menu-item">
-                <a href="userprofile.html"><i class="fa fa-address-card"></i>Profiel</a>
+                <a href="userprofile.html"><i class="fa fa-address-card"></i>User profile</a>
             </li>
         </ul>
         <div class="menu-divider"></div>
         <ul class="menu admin-menu">
             <li class="menu-item">
-                <a href="gebruikers.html" class="active"><i class="fa fa-users"></i>Gebruikers</a>
+                <a href="gebruikers.html" class="active"><i class="fa fa-users"></i>Users</a>
             </li>
             <li class="menu-item">
-                <a href="rollen.html"><i class="fa fa-suitcase"></i>Rollen</a>
+                <a href="rollen.html"><i class="fa fa-suitcase"></i>Roles</a>
             </li>
             <li class="menu-item">
-                <a href="organisatie.html"><i class="fa fa-building"></i>Organisatie</a>
+                <a href="organisatie.html"><i class="fa fa-building"></i>Organisation</a>
             </li>
         </ul>
     </div>
@@ -54,8 +54,8 @@
 <div class="page-content">
     <div class="widget-row">
         <div class="page-intro">
-            <span class="page-title">Gebruikers</span>
-            <span class="page-desc">Hier zie je een overzicht van alle gebruikers</span>
+            <span class="page-title">Users</span>
+            <span class="page-desc">Here you will see an overview of all users</span>
         </div>
     </div>        
 
@@ -63,20 +63,20 @@
         <div class="widget-area">
             <div class="table-actions">
                 <div class="table-title">
-                    Gebruikers overzicht
+                    User overview
                 </div>
         
-                <a class="table-add modal-button" href="#modalUserAdd">Nieuwe gebruiker toevoegen</a>
+                <a class="table-add modal-button" href="#modalUserAdd">Add new user</a>
             </div>
         
             <table class="table table-default">
                 <thead>
                     <tr>
-                        <th class="th-sort">Naam</th>
-                        <th class="th-sort">Rol</th>
+                        <th class="th-sort">Name</th>
+                        <th class="th-sort">Role</th>
                         <th class="th">Email</th>
                         <th class="th-sort th-center">Status</th>
-                        <th class="th th-center">Acties</th>
+                        <th class="th th-center">Actions</th>
                     </tr>
                 </thead>
         
@@ -135,7 +135,7 @@
                     </tr>
                     <tr>
                         <td>G. Ier</td>
-                        <td>Inkoop</td>
+                        <td>Purchases</td>
                         <td>gier@kyc.nl</td>
                         <td class="status status-progress"><i class="fa fa-circle" title="In Afwachting"></i></td>
                         <td class="action">
@@ -145,7 +145,7 @@
                     </tr>
                     <tr>
                         <td>V. Room</td>
-                        <td>Logistiek</td>
+                        <td>Logistics</td>
                         <td>vroom@kyc.nl</td>
                         <td class="status status-progress"><i class="fa fa-circle" title="In Afwachting"></i></td>
                         <td class="action">
@@ -155,7 +155,7 @@
                     </tr>
                     <tr>
                         <td>Ron Drijen</td>
-                        <td>Logistiek</td>
+                        <td>Logistics</td>
                         <td>rondrijen@kyc.nl</td>
                         <td class="status status-error"><i class="fa fa-circle" title="Inactief"></i></td>
                         <td class="action">
@@ -204,52 +204,52 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Gebruiker toevoegen</span>
+                <span class="modal-title">Add User</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
                 <form>
-                    <span class="form-section--title">Gebruikersgegevens</span>
+                    <span class="form-section--title">User details</span>
                     <div class="form-field">
-                        <label>Voornaam</label>
+                        <label>First name</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
-                        <label>Achternaam</label>
+                        <label>Last name</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
-                        <label>Rol</label>
+                        <label>Role</label>
                         <select required>
                             <option>Management</option>
                             <option>Sales</option>
-                            <option>Inkoop</option>
-                            <option>Logistiek</option>
+                            <option>Purchases</option>
+                            <option>Logistics</option>
                             <option>Finance</option>
                             <option>Audit</option>
                             <option>Administrator</option>
                         </select>
                     </div>
                     
-                    <span class="form-section--title">Contactgegevens</span>
+                    <span class="form-section--title">Contact details</span>
 
                     <div class="form-field">
                         <label>Email</label>
                         <input type="text" required/>
                     </div>
                     <div class="form-field">
-                        <label>Telefoonnummer</label>
+                        <label>Phone number</label>
                         <input type="text" />
                     </div>
                     <div class="form-field">
-                        <label>Mobielnummer</label>
+                        <label>Mobile phone number</label>
                         <input type="text" />
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -258,52 +258,52 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Gebruiker bewerken</span>
+                <span class="modal-title">Edit user</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
                 <form>
-                    <span class="form-section--title">Gebruikersgegevens</span>
+                    <span class="form-section--title">User details</span>
                     <div class="form-field">
-                        <label>Voornaam</label>
+                        <label>First name</label>
                         <input type="text" placeholder="Ad"/>
                     </div>
                     <div class="form-field">
-                        <label>Achternaam</label>
+                        <label>Last name</label>
                         <input type="text" placeholder="Mini"/>
                     </div>
                     <div class="form-field">
-                        <label>Rol</label>
+                        <label>Role</label>
                         <select>
                             <option>Management</option>
                             <option>Sales</option>
-                            <option>Inkoop</option>
-                            <option>Logistiek</option>
+                            <option>Purchases</option>
+                            <option>Logistics</option>
                             <option>Finance</option>
                             <option>Audit</option>
                             <option>Administrator</option>
                         </select>
                     </div>
 
-                    <span class="form-section--title">Contactgegevens</span>
+                    <span class="form-section--title">Contact details</span>
 
                     <div class="form-field">
                         <label>Email</label>
                         <input type="text" placeholder="admini@kyc.nl"/>
                     </div>
                     <div class="form-field">
-                        <label>Telefoonnummer</label>
+                        <label>Phone number</label>
                         <input type="text" placeholder="06123456789" />
                     </div>
                     <div class="form-field">
-                        <label>Mobielnummer</label>
+                        <label>Mobile phone number</label>
                         <input type="text" placeholder="06123456789"/>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Annuleren</a>
-                <a class="btn btn-primary">Opslaan</a>
+                <a class="btn btn-outline btn-close">Cancel</a>
+                <a class="btn btn-primary">Save</a>
             </div>
         </div>
     </div>
@@ -312,15 +312,15 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Gebruiker verwijderen</span>
+                <span class="modal-title">Delete user</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
-                <p>Weet u zeker dat u Ad Mini wilt verwijderen?</p>
+                <p>Are you sure that you want to delete the selected user?</p>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-outline btn-close">Nee</a>
-                <a class="btn btn-primary">Ja</a>
+                <a class="btn btn-outline btn-close">No</a>
+                <a class="btn btn-primary">Yes</a>
             </div>
         </div>
     </div>
@@ -329,38 +329,38 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Gebruiker</span>
+                <span class="modal-title">User</span>
                 <span class="close"><i class="fa fa-close"></i></span>
             </div>
             <div class="modal-body">
                 <form>
-                    <span class="form-section--title">Gebruikersgegevens</span>
+                    <span class="form-section--title">User details</span>
 
                     <div class="form-field">
-                        <label>Voornaam</label>
+                        <label>First name</label>
                         <span>Ad</span>
                     </div>
                     <div class="form-field">
-                        <label>Achternaam</label>
+                        <label>Last name</label>
                         <span>Mini</span>
                     </div>
                     <div class="form-field">
-                        <label>Laatst ingelogd</label>
+                        <label>Last logged in</label>
                         <span>22-12-2022 13:48</span>
                     </div>
 
-                    <span class="form-section--title">Contactgegevens</span>
+                    <span class="form-section--title">Contact details</span>
 
                     <div class="form-field">
                         <label>Email</label>
                         <span>admini@kyc.nl</span>
                     </div>
                     <div class="form-field">
-                        <label>Telefoonnummer</label>
+                        <label>Phone number</label>
                         <span>0101234567</span>
                     </div>
                     <div class="form-field">
-                        <label>Mobielnummer</label>
+                        <label>Mobile phone number</label>
                         <span>0612345678</span>
                     </div>
                 </form>
